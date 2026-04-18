@@ -33,7 +33,6 @@ class ExchangeRates:
             df = pd.DataFrame(rates)
 
             df["effectiveDate"] = table_data["effectiveDate"]
-            df["table"] = table_data["table"]
 
             return df
 
