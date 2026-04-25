@@ -1,9 +1,10 @@
 import requests
 import pandas as pd
 
+
 class SP500:
-    def __init__(self, data):
-        self.api_url = f"http://api.marketstack.com/v1/eod?access_key=3b53b71a2e0497f0db02037530459f68&symbols=SPY"
+    def __init__(self, access_key):
+        self.api_url = f"http://api.marketstack.com/v1/eod?access_key={access_key}&symbols=SPY"
 
     def get_data(self):
         try:
