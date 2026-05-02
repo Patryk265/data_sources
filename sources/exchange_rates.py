@@ -63,18 +63,3 @@ class ExchangeRates:
         else:
             raise ValueError("wrong data format")
 
-
-
-nbp = ExchangeRates()
-
-data = nbp.get_data()
-
-df_rates, df_gold = nbp.convert_to_data_frame(data)
-
-print("Exchange rates:")
-print(df_rates.head())
-
-print("\nGold price:")
-print(f"{df_gold} zł / gram")
-        
-# pobrać dane o wartości złota
