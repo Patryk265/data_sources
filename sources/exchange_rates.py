@@ -39,3 +39,4 @@ class ExchangeRates:
         else:
             raise ValueError("wrong data format")
         
+# pobrać dane o wartości złota
